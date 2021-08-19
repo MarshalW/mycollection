@@ -1,0 +1,9 @@
+---
+- name: touch file
+  hosts: "{{servers}}"
+  gather_facts: no
+  roles:
+    - role: ../roles/touchfile
+  vars:
+    title: test
+    servers: localhost

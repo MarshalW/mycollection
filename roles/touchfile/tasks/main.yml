@@ -1,0 +1,4 @@
+---
+- name: hello world
+  shell: |
+    touch /tmp/{{title}}.txt
