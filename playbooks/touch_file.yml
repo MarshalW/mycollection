@@ -3,7 +3,7 @@
   hosts: "{{servers}}"
   gather_facts: no
   roles:
-    - role: ../roles/touchfile
+    - role: marshalw.mycollection.touchfile
   vars:
     title: test
     servers: localhost
