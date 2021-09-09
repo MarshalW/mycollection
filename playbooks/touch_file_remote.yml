@@ -1,0 +1,9 @@
+---
+- name: touch file
+  hosts: chosen_host
+  gather_facts: no
+  roles:
+    - role: marshalw.mycollection.touchfile
+  vars:
+    title: test
+    # servers: "{{remote_servers}}"
